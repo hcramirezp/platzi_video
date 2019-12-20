@@ -9,6 +9,10 @@
     <title>Buscador</title>
 </head>
 <body>
+    <!-- El encabezado de la página en que se incluye el logo de Platzi Video. Se asigna la clase header.
+         Se crea el menú de ingreso a la aplicación, el cual incluye una imagen, el texto "Perfil" y las opciones
+         "Cuenta" y "Cerrar Sesión". El menú debe mostrarse cuando el usuario pasa el puntero del mouse sobre la
+         imagen de usuario o la palabra Perfil.  -->
     <header class="header">
         <img class="header__img" src="..\platzi_video\images\logo-platzi-video-BW2.png" alt="Logo Platzi Video">
         <div class="header__menu">
@@ -22,9 +26,33 @@
             </ul>
         </div>
     </header>
+    <!-- Se crea una sección en la cual contiene un campo que se utilizará para hacer las búsquedas en el sitio.
+         Se asigna la clase main a esta sección, la cual incluye un título y un input con la etiqueta "Buscar..."
+         Al campo de búsqueda se asigna la clase input. -->
     <section class="main">
         <h2 class="main__title">¿Qué quieres ver hoy?</h2>
         <input class="input" type="text" placeholder="Buscar...">
+    </section>
+    
+    <!-- Se agrega la sección que corresponde a un carrusel de imágenes en donde se va a hacer la selección de los 
+        videos, en la que se incluye una serie de items, que cada uno contiene una imágen, botones y un texto descriptivo.
+        Esta sección se denota con la clase carousel.-->
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/3326195/pexels-photo-3326195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="throwing sand">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="../platzi_video/images/icon_play.png" alt="Play">
+                        <img src="../platzi_video/images/icon_plus.png" alt="Plus">
+                    </div>
+                    <p class="carousel-item__details--title">Título descriptivo</p>
+                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                </div>
+            </div>
+            <div class="carousel-item"></div>
+        </div>
+
     </section>
 </body>
 </html>
