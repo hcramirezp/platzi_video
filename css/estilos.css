@@ -9,7 +9,7 @@ body {
 /* Estilos de la sección header de la aplicación. Se utiliza la notación BEM para las clases de cada uno de
     los elementos de esta sección.*/
 .header {
-    background-color: #8F57FD;
+    background-color:transparent;
     width: 100%;
     height: 80px;
     display: flex;
@@ -153,6 +153,8 @@ body {
 .carousel-item__details {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     font-size: 10px;
+    color: white;
+    font-family: 'Muli', sans-serif;
     opacity: 0;
     transition: 450ms opacity;
     padding: 10px;
@@ -165,4 +167,9 @@ body {
 
 .carousel-item__details:hover {
     opacity: 1;
+}
+
+.carousel-item__details--img {
+    width: 20px;
+    height: 20px;
 }

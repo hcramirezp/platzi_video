@@ -18,3 +18,26 @@ Incluye lo siguiente:
 * Se asigna la clase main a esta sección, la cual incluye un título y un input con la etiqueta *"Buscar..."* 
 * Al campo de búsqueda se asigna la clase input.
 * Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
+
+## Versión 1.2
+Construcción del carrusel de imágenes donde se va a hacer la selección de los videos.
+
+Incluye lo siguiente:
+* Se crea una sección la cual contiene una serie de items que cada uno corresponde a un video.
+* Cada ítem contiene una imágen descriptiva del video a seleccionar.
+* Para cada ítem del carrusel, se incluyen dos botones y un texto descriptivo. 
+* Se asigna la clase carousel a esta sección, la cual incluye un ítem para cada video. 
+* Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
+
+
+Creación de la página de inicio de sesión de la aplicación (archivo *login.html*).
+
+Incluye los siguiente:
+* Se crea la sección Header del sitio y al encabezado de la página se incluye el logo de Platzi Video.
+* Se crea una sección en donde se incluye el formulario de inicio de sesión, se asigna la clase login.
+* El formulario de inicio de sesión, incluye dos campos llamados *"Correo"* y *"Contraseña"* y el botón 
+  *"Iniciar sesión"*.
+* En el formulario también aparece un checkbox con la etiqueta *"Recuerdame"* y un enlace con el texto 
+  *"Olvidé mi contraseña"*.
+* Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
+* Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
