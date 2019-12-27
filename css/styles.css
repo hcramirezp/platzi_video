@@ -147,6 +147,22 @@ body {
     text-decoration: underline;
 }
 
+/* Media query para diseño responsivo de la página de inicio de sesión */
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 /* Estilos de la página de registro de usuario en la aplicación. */
 .register {
     display: flex;
@@ -190,4 +206,19 @@ body {
 
 .register__container--register a:hover {
     text-decoration: underline;    
+}
+
+/* Media query para diseño responsivo de la página de registro de usuario */
+@media only screen and (max-width: 600px) {
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
