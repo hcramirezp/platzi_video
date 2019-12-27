@@ -10,6 +10,7 @@ Incluye lo siguiente:
 * El menú debe mostrarse cuando el usuario pasa el puntero del mouse sobre la imagen de usuario o la palabra Perfil.
 * Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
 
+---------------------------
 ## Versión 1.1
 Construcción de un input para realizar busquedas.
 
@@ -19,6 +20,7 @@ Incluye lo siguiente:
 * Al campo de búsqueda se asigna la clase input.
 * Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
 
+---------------------------
 ## Versión 1.2
 Construcción del carrusel de imágenes donde se va a hacer la selección de los videos.
 
@@ -32,12 +34,24 @@ Incluye lo siguiente:
 
 Creación de la página de inicio de sesión de la aplicación (archivo *login.html*).
 
-Incluye los siguiente:
+Incluye lo siguiente:
 * Se crea la sección Header del sitio y al encabezado de la página se incluye el logo de Platzi Video.
 * Se crea una sección en donde se incluye el formulario de inicio de sesión, se asigna la clase login.
 * El formulario de inicio de sesión, incluye dos campos llamados *"Correo"* y *"Contraseña"* y el botón 
   *"Iniciar sesión"*.
 * En el formulario también aparece un checkbox con la etiqueta *"Recuerdame"* y un enlace con el texto 
   *"Olvidé mi contraseña"*.
+* Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
+* Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
+
+---------------------------
+## Versión 1.3
+Creación de la página de registro de usuario nuevo de la aplicación (archivo *reigster.html*).
+
+Incluye lo siguiente:
+* Se crea la sección Header del sitio y al encabezado de la página se incluye el logo de Platzi Video.
+* Se crea una sección para el formulario de registro de usuario, se asigna la clase register.
+* El formulario de registro de usuario incluye tres campos llamados *"Nombre"*, *"Correo"* y *"Contraseña"* y el botón *"Registrarme"*. 
+* En el formulario también aparece un enlace con el texto *"Iniciar sesión"*.
 * Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
 * Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
