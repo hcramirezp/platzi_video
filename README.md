@@ -55,3 +55,11 @@ Incluye lo siguiente:
 * En el formulario también aparece un enlace con el texto *"Iniciar sesión"*.
 * Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
 * Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
+
+---------------------------
+## Versión 1.4
+Se agregan media queries.
+
+Incluye lo siguiente:
+* Se crea media query en el archivo *styles.css* que impacta las clases *login__container* y *footer* para generar diseño responsive en la página de inicio de sesión.
+* Se crea media query en el archivo *styles.css* que impacta las clases *register__container* y *footer* para generar diseño responsive en la página de registro de usuarios.
