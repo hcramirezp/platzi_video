@@ -46,7 +46,7 @@ Incluye lo siguiente:
 
 ---------------------------
 ## Versión 1.3
-Creación de la página de registro de usuario nuevo de la aplicación (archivo *reigster.html*).
+Creación de la página de registro de usuario nuevo de la aplicación (archivo *register.html*).
 
 Incluye lo siguiente:
 * Se crea la sección Header del sitio y al encabezado de la página se incluye el logo de Platzi Video.
@@ -74,3 +74,14 @@ Incluye lo siguiente:
 * Para cada ítem del carrusel, se incluyen dos botones y un texto descriptivo. 
 * Se asigna la clase carousel a estas secciones. 
 * Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
+
+---------------------------
+## Versión 1.6
+Creación de la página para el mensaje de error 404 (archivo *errorpage.html*).
+
+Incluye lo siguiente:
+* Se crea la sección Header del sitio y al encabezado de la página se incluye el logo de Platzi Video.
+* Se crea una sección para el mensaje de error, se asigna la clase errormessage.
+* Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
+* Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
+
