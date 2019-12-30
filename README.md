@@ -63,3 +63,14 @@ Se agregan media queries.
 Incluye lo siguiente:
 * Se crea media query en el archivo *styles.css* que impacta las clases *login__container* y *footer* para generar diseño responsive en la página de inicio de sesión.
 * Se crea media query en el archivo *styles.css* que impacta las clases *register__container* y *footer* para generar diseño responsive en la página de registro de usuarios.
+
+---------------------------
+## Versión 1.5
+Afinamiento de estilos de la página principal.
+
+Incluye lo siguiente:
+* Se agregan las secciones *"Tendencias"* y *"Originales de Platzi Video"* , en las que cada una de ellas contiene un carrusel con una serie de items que cada uno corresponde a un video.
+* Cada ítem contiene una imágen descriptiva del video a seleccionar.
+* Para cada ítem del carrusel, se incluyen dos botones y un texto descriptivo. 
+* Se asigna la clase carousel a estas secciones. 
+* Se configuran los estilos para cada uno de los elementos creados en esta versión en el archivo *estilos.css*.
