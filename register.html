@@ -11,17 +11,17 @@
 <body>
  <!-- El encabezado de la página en que se incluye el logo de Platzi Video. Se asigna la clase header. -->
     <header class="header">
-        <img class="header__img" src="../platzi_video/images/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
+        <img tabindex="0" class="header__img" src="../platzi_video/images/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
     </header>
     <!-- Se crea el formulario de registro de usuario, que incluye dos campos llamados "Nombre", "Correo" y "Contraseña" y el botón 
     "Registrarme". También aparece un enlace con el texto "Iniciar sesión". Se asigna la clase register. -->
     <section class="register">
         <section class="register__container">
-            <h2>Regístrate</h2>
+            <h2 tabindex="0">Regístrate</h2>
             <form class="register__container--form">
-                <input class="input" type="text" placeholder="Nombre">
-                <input class="input" type="text" placeholder="Correo">
-                <input class="input" type="password" placeholder="Contraseña">
+                <input aria-label="Nombre" class="input" type="text" placeholder="Nombre">
+                <input aria-label="Correo" class="input" type="text" placeholder="Correo">
+                <input aria-label="Contraseña" class="input" type="password" placeholder="Contraseña">
                 <button class="button">Registrarme</button>
             </form>
             <p class="register__container--register"><a href="/">Iniciar sesión</a></p>

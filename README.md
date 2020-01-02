@@ -91,5 +91,14 @@ Afinamiento de estilos de las páginas del sitio utilizando preprocesador Sass.
 
 Incluye lo siguiente:
 * Creacion de carpeta SASS en la aplicación, en la cual se incluyen los archivos *"estilos.scss"* y *"styles.scss"*.
-* Se incluyen las variables para color de fondo, tipo de fuente y color de texto en los archivos de estilos *"estilos.scss"* y *"styles.scss"* que son aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errormessage.html"*.
-* Se crea la clase .flex en los archivos de estilos *"estilos.scss"* y *"styles.scss"*, la cual es utilizada dentro de los estilos aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errormessage.html"*.
+* Se incluyen las variables para color de fondo, tipo de fuente y color de texto en los archivos de estilos *"estilos.scss"* y *"styles.scss"* que son aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errorpage.html"*.
+* Se crea la clase .flex en los archivos de estilos *"estilos.scss"* y *"styles.scss"*, la cual es utilizada dentro de los estilos aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errorpage.html"*.
+
+---------------------------
+## Versión 1.8
+Inclusión de propiedades para mejorar la accesibilidad del sitio.
+
+Incluye lo siguiente:
+* Se agrega el atributo **"tabindex"** a los diferentes elementos que lo requieren para mejorar la accesibilidad a las páginas cuando se utilicen herramientas de lectura de páginas a usuarios invidentes. 
+* Se agrega el atributo **"aria-label"** a todos los elementos de tipo *"input"* habilitando las características de accesibilidad por cuanto estos campos tienen asignado un placeholder y no etiqueta (label) para nombrarlos en las páginas.
+* Los anteriores cambios se aplican a los archivos *"index.html"*, *"login.html"*, *"register.html"* y *"errorpage.html"*.
