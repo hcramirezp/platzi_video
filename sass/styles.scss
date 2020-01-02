@@ -1,0 +1,275 @@
+/* Estilos de la página de inicio de sesión en la aplicación. Utilizando SASS*/
+$colortexto: white;
+$colorppal: #AB88FF;
+$tipofuente: 'Muli', sans-serif;
+
+body {
+    margin: 0px;
+    background: linear-gradient(#21C08B,$colorppal);
+    font-family: $tipofuente;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    @extend .flex;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.login {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid $colortexto;
+    border-radius: 40px;
+    color: $colortexto;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.login__container--form label {
+    font-size: 14px;   
+}
+
+.login__container--remember-me {
+    color: $colortexto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: $colortexto;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    @extend .flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register {
+    font-size: 14px; 
+}
+
+.login__container--register a {
+    font-size: 16px;
+    color: $colortexto;  
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;    
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid $colortexto;
+    font-family: $tipofuente;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: $colortexto;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 25px;
+    color: $colortexto;
+    cursor: pointer;
+    font-family: $tipofuente;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px; 
+    margin: 10px 0px; 
+}
+
+.footer {
+    background-color:$colorppal;
+    @extend .flex;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: $colortexto;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para diseño responsivo de la página de inicio de sesión */
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* Estilos de la página de registro de usuario en la aplicación. */
+.register {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid $colortexto;
+    border-radius: 40px;
+    color: $colortexto;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.register__container--form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.register__container--register {
+    font-size: 14px; 
+}
+
+.register__container--register a {
+    font-size: 16px;
+    color: $colortexto;  
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;    
+}
+
+.register__container--register a:hover {
+    text-decoration: underline;    
+}
+
+/* Media query para diseño responsivo de la página de registro de usuario */
+@media only screen and (max-width: 600px) {
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* Estilos de la página de mensajes de error en la aplicación. */
+.errormessage {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 180px);
+    width: 100%; 
+}
+
+.errormessage--title {
+    color: $colortexto;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 30px 0px; 
+}
+
+.errormessage--subtitle {
+    color: $colortexto;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px; 
+}
+
+/* Se agrega una animación para la página de mensaje de error 404. */
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes wobble {
+    0% {transform: translateX(0%);}
+    15% {transform: translateX(-25%) rotate(-5deg);}
+    30% {transform: translateX(20%) rotate(3deg);}
+    45% {transform: translateX(-15%) rotate(-3deg);}
+    60% {transform: translateX(10%) rotate(2deg);}
+    75% {transform: translateX(-5%) rotate(-1deg);}
+    100% {transform: translateX(0%);}
+  }
+
+  .wobble {
+    animation-name: wobble;
+  }
+  

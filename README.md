@@ -85,3 +85,11 @@ Incluye lo siguiente:
 * Se crea la sección footer para la página, que incluye tres enlaces correspondientes a *"Términos de uso"*,   *"Declaración de privacidad"* y *"Centro de ayuda"*. Se asigna la clase footer a esta sección.
 * Se configuran los estilos para cada uno de los elementos creados en esta página en el archivo *styles.css*.
 
+---------------------------
+## Versión 1.7
+Afinamiento de estilos de las páginas del sitio utilizando preprocesador Sass.
+
+Incluye lo siguiente:
+* Creacion de carpeta SASS en la aplicación, en la cual se incluyen los archivos *"estilos.scss"* y *"styles.scss"*.
+* Se incluyen las variables para color de fondo, tipo de fuente y color de texto en los archivos de estilos *"estilos.scss"* y *"styles.scss"* que son aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errormessage.html"*.
+* Se crea la clase .flex en los archivos de estilos *"estilos.scss"* y *"styles.scss"*, la cual es utilizada dentro de los estilos aplicados a las páginas *"index.html"*, *"login.html"*, *"register.html"* y *"errormessage.html"*.

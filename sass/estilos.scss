@@ -1,0 +1,244 @@
+/* Archivo de estilos para el proyecto Platzi Video */
+/* Estilos de la sección body de la página */
+$colorfondo: #AB88FF;
+$colortexto: white;
+$tipofuente: 'Muli', sans-serif;
+
+body {
+    margin: 0px;
+    background-color: $colorfondo;
+    font-family: $tipofuente;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de la sección header de la aplicación. Se utiliza la notación BEM para las clases de cada uno de
+    los elementos de esta sección.*/
+.header {
+    background-color:transparent;
+    width: 100%;
+    height: 80px;
+    @extend .flex;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header__menu {
+    margin-right: 30px;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+}
+
+.header__menu li {
+    margin: 10px 0px;
+}
+
+.header__menu li a {
+    color: $colortexto;
+    text-decoration: none;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+
+.header__menu--profile {
+    margin-right: 8px;
+    @extend .flex;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    color: $colortexto;
+}
+
+.header__menu--profile p {
+    margin: 0px;
+    color: $colortexto;
+}
+
+.main {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+/* Estilos de la sección main de la aplicación. Se utiliza la notación BEM para las clases de cada uno de
+    los elementos de esta sección.*/
+
+.main__title {
+    color: $colortexto;
+    font-size: 25px;
+}
+
+.categories__title {
+    color: $colortexto;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid $colortexto;
+    border-radius: 32px;
+    color: $colortexto;
+    font-family: $tipofuente;
+    font-size: 16px;
+    height: 50px;
+    width: 70%;
+    padding: 0px 20px;
+    outline: none;
+}
+
+::placeholder {
+    color: $colortexto;
+}
+
+/* Estilos de la sección carousel de la aplicación. Se utiliza la notación BEM para las clases de cada uno de
+    los elementos de esta sección.*/
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding-left: 30px;
+    position: relative;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    background-color: palevioletred;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    position: relative;
+    font-size: 20px;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+}
+
+.carousel-item:hover ~ .carousel-item {
+    -webkit-transform: translate3d(100px, 0, 0);
+            transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $colortexto;
+    font-family: $tipofuente;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-item__details:hover {
+    opacity: 1;
+}
+
+.carousel-item__details--img {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-item__details--title {
+    color: $colortexto;
+    margin: 5px 0px 0px 0px;
+}
+
+.carousel-item__details--subtitle {
+    color: $colortexto;
+    font-size: 6px;
+    margin: 3px 0px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.footer {
+    background-color:$colorfondo;
+    @extend .flex;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: $colortexto;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

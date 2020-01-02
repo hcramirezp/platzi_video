@@ -1,271 +1,275 @@
-/* Estilos de la página de inicio de sesión en la aplicación. */
+@charset "UTF-8";
+/* Estilos de la página de inicio de sesión en la aplicación. Utilizando SASS*/
 body {
-    margin: 0px;
-    background: linear-gradient(#21C08B,#AB88FF);
-    font-family: 'Muli', sans-serif;
+  margin: 0px;
+  background: linear-gradient(#21C08B, #AB88FF);
+  font-family: "Muli", sans-serif;
+}
+
+.flex, .errormessage, .register, .footer, .login__container--social-media > div, .login, .header {
+  display: flex;
+  align-items: center;
 }
 
 .header {
-    background-color: transparent;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
 }
 
 .header__img {
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
 }
 
 .login__container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 40px;
-    color: white;
-    padding: 60px 68px 40px;
-    min-height: 700px;
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .login__container--form {
-    display: flex;
-    flex-direction: column;    
+  display: flex;
+  flex-direction: column;
 }
 
 .login__container--form label {
-    font-size: 14px;   
+  font-size: 14px;
 }
 
 .login__container--remember-me {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .login__container--remember-me a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .login__container--remember-me a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .login__container--social-media > div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .login__container--social-media > img {
-    width: 30px;
-    margin-right: 10px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 .login__container--register {
-    font-size: 14px; 
+  font-size: 14px;
 }
 
 .login__container--register a {
-    font-size: 16px;
-    color: white;  
-    font-weight: bold;
-    text-decoration: none;    
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .login__container--register a:hover {
-    text-decoration: underline;    
+  text-decoration: underline;
 }
 
 .input {
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 2px solid white;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 0px 20px;
-    outline: none;
-    height: 50px;
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
 }
 
 ::placeholder {
-    color: white;
+  color: white;
 }
 
 .button {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 50px;
-    letter-spacing: 1px; 
-    margin: 10px 0px; 
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
 }
 
 .footer {
-    background-color:#AB88FF;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
+  background-color: #AB88FF;
+  height: 100px;
+  width: 100%;
 }
 
 .footer a {
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Media query para diseño responsivo de la página de inicio de sesión */
-
 @media only screen and (max-width: 600px) {
-    .login__container {
-        background-color: transparent;
-        border: none;
-        padding: 0px;
-        width: 100%;
-    }
-    
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-}
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
 
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 /* Estilos de la página de registro de usuario en la aplicación. */
 .register {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
 }
 
 .register__container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 40px;
-    color: white;
-    padding: 60px 68px 40px;
-    min-height: 700px;
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .register__container--form {
-    display: flex;
-    flex-direction: column;    
+  display: flex;
+  flex-direction: column;
 }
 
 .register__container--register {
-    font-size: 14px; 
+  font-size: 14px;
 }
 
 .register__container--register a {
-    font-size: 16px;
-    color: white;  
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;    
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .register__container--register a:hover {
-    text-decoration: underline;    
+  text-decoration: underline;
 }
 
 /* Media query para diseño responsivo de la página de registro de usuario */
 @media only screen and (max-width: 600px) {
-    .register__container {
-        background-color: transparent;
-        border: none;
-        padding: 0px;
-        width: 100%;
-    }
-    
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-}
+  .register__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
 
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 /* Estilos de la página de mensajes de error en la aplicación. */
 .errormessage {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: calc(100vh - 180px);
-    width: 100%; 
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 180px);
+  width: 100%;
 }
 
 .errormessage--title {
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-    margin: 30px 0px; 
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 30px 0px;
 }
 
 .errormessage--subtitle {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px 0px; 
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px;
 }
 
 /* Se agrega una animación para la página de mensaje de error 404. */
-
 .animated {
-    animation-duration: 2.5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-  }
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
 
-  @keyframes wobble {
-    0% {transform: translateX(0%);}
-    15% {transform: translateX(-25%) rotate(-5deg);}
-    30% {transform: translateX(20%) rotate(3deg);}
-    45% {transform: translateX(-15%) rotate(-3deg);}
-    60% {transform: translateX(10%) rotate(2deg);}
-    75% {transform: translateX(-5%) rotate(-1deg);}
-    100% {transform: translateX(0%);}
+@keyframes wobble {
+  0% {
+    transform: translateX(0%);
   }
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.wobble {
+  animation-name: wobble;
+}
 
-  .wobble {
-    animation-name: wobble;
-  }
-  
+/*# sourceMappingURL=styles.css.map */
